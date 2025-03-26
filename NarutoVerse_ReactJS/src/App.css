@@ -1,42 +1,205 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin :auto;
+    background-color: #F6F6F6;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+div{
+    /*border-style:solid;
+    border-width: 1px;
+    border-color: yellow;*/
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*logobar started*/
+
+.logobar {
+    display:flex;
+    padding : 12px 20px 12px 20px;
+    background-color: #F2A30B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.naruto-logo {
+    height: 68px;
+    width : 68px;
+    object-fit: contain;
 }
 
-.card {
-  padding: 2em;
+.naruto-logo img {
+    height: 68px;
+    width: 68px;
 }
 
-.read-the-docs {
-  color: #888;
+.naruto-description {
+    flex-grow: 1;
+    margin-left: 5px;
+    padding-top : 12px;
+    padding-left : 16px;
+    color: #FBE407;
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size : 24px;
+    line-height: 36px;
+}
+
+/* image bar css started for the images */
+
+.imagebar {
+    display: flex;
+    width: 210%;
+    margin-top: 10px;
+    justify-content : space-evenly;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 15px;
+    gap: 32px;
+    padding: 24px;
+}
+.image-1{
+    height: 288px;
+    width: 512px;
+    object-fit: contain;
+    border-color : #F2A30B;
+    border-style: solid;
+    border-radius: 16px;
+    border-width : 3px;
+}
+
+.image-2{
+    height: 288px;
+    width: 512px;
+    object-fit: contain;
+    
+}
+.image-3{
+    height: 288px;
+    width: 512px;
+    object-fit: contain;
+
+}
+.image-4{
+    height: 288px;
+    width: 512px;
+    object-fit: contain;
+   
+}
+.image-5{
+    height: 288px;
+    width: 512px;
+    object-fit: contain;
+   
+}
+
+/* HOKAGE BAR TITLE */
+
+.hokagebar{
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size : 24px;
+    line-height: 48px;
+    padding: 24px;
+    color: #F2A30B;
+}
+
+/* HOKAGE CARD CSS STARTED */
+
+.hokage-card{
+    display:flex;
+    padding: 24px;
+    gap: 16px;
+    
+}
+
+.hokage-1-card {
+    display: flex;
+    flex-direction: column;
+    padding : 8px;
+    gap: 10px;
+    border-width: 2px;
+    border-radius: 16px;
+    border-color: #F2A30B;
+    border-style: solid;
+}
+.hokage-2-card{
+    display: flex;
+    flex-direction: column;
+    padding : 8px;
+    gap: 10px;
+}
+.hokage-3-card{
+    display: flex;
+    flex-direction: column;
+    padding : 8px;
+    gap: 10px;
+}
+.hokage-4-card{
+    display: flex;
+    flex-direction: column;
+    padding : 8px;
+    gap: 10px;
+}
+.hokage-5-card{
+    display: flex;
+    flex-direction: column;
+    padding : 8px;
+    gap: 10px;
+}
+
+.hokage-1-image{
+    height: 126px;
+    width: 123px;
+}
+
+.hokage-1-name{
+    height: 48px;
+    width: 118px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* DESCRIPTION OF INDIVIDUAL HOKAGE CSS STARTED */
+
+.hokage-1-title{
+    height: 18px;
+    width: 123px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size : 12px;
+    text-align : center;
+}
+
+.title-container{
+    display: flex;
+    gap: 14px;
+}
+
+.hokage-description{
+    display:flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 27px;
+}
+
+.title-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+#line-1{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size : 14px;
+    color:#F2A30B;
+}
+
+#line-2{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size : 11px;
 }
